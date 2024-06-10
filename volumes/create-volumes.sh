@@ -9,4 +9,3 @@ do
       --tag-specifications "ResourceType=volume,Tags=[{Key=Name,Value=volume${i}},{Key=Project,Value=Roboshop}]"
 done
 
-
