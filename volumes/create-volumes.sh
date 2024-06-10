@@ -6,5 +6,7 @@ do
       --no-encrypted \
       --volume-type gp2 \
       --size 2 \
-      --tag-specifactions "ResourceType=volume,Tags=[{Key=Name,Value=volume{i},{Key=Project,Value=Roboshop}]"
+      --tag-specifications "ResourceType=volume,Tags=[{Key=Name,Value=volume{i},{Key=Project,Value=Roboshop}]"
 done
+
+
