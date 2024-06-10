@@ -15,3 +15,4 @@ aws ec2 modify-volume \
     --volume-type gp3 \
     --volume-id ${i}
 done
+
