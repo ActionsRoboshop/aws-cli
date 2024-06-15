@@ -1,0 +1,4 @@
+aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query "Reservations[].Instances[].{InstanceId: InstanceId,AvailabilityZone: Placement.AvailabilityZone,volume: BlockDeviceMappings[].Ebs}" --output table
+
+
+aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query "Reservations[].Instances[].{InstanceId: InstanceId}"  --outpu
