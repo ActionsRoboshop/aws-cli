@@ -1,6 +1,8 @@
  #!/bin/bash
 
- sudo yum install python3.12-devel python3.12-pip -y &>> /tmp/get.log
- sudo pip3.12 install ansible ansible-core==2.16 botocore boto3 python-jenkins &>> /tmp/get.log
+ sudo dnf install nginx -y &>> /tmp/get.log
 
- ansible-pull -i localhost, -U https://github.com/ActionsRoboshop/expense-ansible.git -e component=frontend -e env=dev role-call.yml &>> /tmp/get.log
+ #sudo yum install python3.12-devel python3.12-pip -y &>> /tmp/get.log
+ #sudo pip3.12 install ansible ansible-core==2.16 botocore boto3 python-jenkins &>> /tmp/get.log
+
+ #ansible-pull -i localhost, -U https://github.com/ActionsRoboshop/expense-ansible.git -e component=frontend -e env=dev role-call.yml &>> /tmp/get.log
